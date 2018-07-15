@@ -2,8 +2,15 @@ let gulp            = require('gulp'),
     scss            = require('gulp-sass'),
     browserSync     = require('browser-sync'),
     autoprefixer    = require('gulp-autoprefixer'),
-    nunjucks        = require('gulp-nunjucks')
-    // concat          = require('gulp-concat')
+    nunjucks        = require('gulp-nunjucks'),
+    jsImport          = require('gulp-js-import')
+
+gulp.task('importJs', function() {
+  return gulp.src('src/scripts/app.js')
+      .pipe(jsImport({hideConsole: true}))
+      .pipe(gulp.dest('src'))
+      .pipe(browserSync.reload({stream: true}));
+});
 
 gulp.task('scss', () => {
   return gulp.src('src/styles/app.scss')
@@ -15,14 +22,14 @@ gulp.task('scss', () => {
       .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('nunjucks', () =>{
+gulp.task('nunjucks', () => {
   return gulp.src('src/templates/index.html')
       .pipe(nunjucks.compile())
       .pipe(gulp.dest('src'))
       .pipe(browserSync.reload({ stream: true }))
 });
 
-gulp.task('browser-sync', () =>{
+gulp.task('browser-sync', () => {
   browserSync({
     server: {
       baseDir: 'src'
@@ -31,9 +38,9 @@ gulp.task('browser-sync', () =>{
   });
 });
 
-gulp.task('default', ['browser-sync', 'nunjucks', 'scss'], () => {
-  gulp.watch('src/styles**/*.scss', ['scss']);
+gulp.task('default', ['browser-sync', 'nunjucks', 'scss', 'importJs'], () => {
+  gulp.watch('src/styles/**/*.scss', ['scss']);
+  gulp.watch('src/scripts/**/*.js', ['importJs']);
   gulp.watch('src/templates/**/*.html', ['nunjucks', browserSync.reload]);
   gulp.watch('src/styles/**/*.css', browserSync.reload);
-  gulp.watch('src/scripts/**/*.js', browserSync.reload);
 });

@@ -1,0 +1,46 @@
+@media (max-width: $max-phone-width) {
+  html {
+    font-size: 10px;
+  }
+
+  .section {
+    max-width: 54rem;
+  }
+}
+
+@media (min-width: $min-tablet-width) {
+  html {
+    font-size: 12px;
+  }
+
+  .section {
+    max-width: 80rem;
+  }
+}
+@media (min-width: $min-desktop-width) {
+  html {
+    font-size: 20px;
+  }
+
+  .section {
+    max-width: 50rem;
+  }
+}
+@media (min-width: $min-laptop-width) {
+  html {
+    font-size: 24px;
+  }
+
+  .section {
+    max-width: 50rem;
+  }
+}
+@media (min-width: $huge-desktop-width) {
+  html {
+    font-size: 50px;
+  }
+
+  .section {
+    max-width: 46rem;
+  }
+}

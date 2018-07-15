@@ -1,3 +1,10 @@
 @import '_variables';
+@import '_reset';
 
 @import 'layout';
+
+// sections
+@import 'sections/header';
+
+// responsive
+@import 'responsive/layout';
