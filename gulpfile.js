@@ -6,7 +6,7 @@ let gulp            = require('gulp'),
     // concat          = require('gulp-concat')
 
 gulp.task('scss', () => {
-  return gulp.src('src/styles/main.scss')
+  return gulp.src('src/styles/app.scss')
       .pipe(scss().on( 'error', (error) =>
           {console.log( error );} )
       )
