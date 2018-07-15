@@ -1,0 +1,27 @@
+{
+  "name": "mogo-template",
+  "version": "1.0.0",
+  "description": "simple landing for improving markup skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitaliy-Maznyi/mogo.git"
+  },
+  "author": "Vitaliy-Maznyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vitaliy-Maznyi/mogo/issues"
+  },
+  "homepage": "https://github.com/Vitaliy-Maznyi/mogo#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-nunjucks": "^4.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
