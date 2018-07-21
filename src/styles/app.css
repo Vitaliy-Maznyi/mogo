@@ -532,6 +532,46 @@ html {
   .counter__title {
     font-size: .5rem; }
 
+.work__technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 0.7rem;
+  margin-top: 2rem; }
+
+.work__technology {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.work .technology {
+  width: 200px;
+  margin-bottom: 1rem; }
+  .work .technology__icon {
+    color: #95e1d3;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    font-size: 1.5rem; }
+  .work .technology__descr-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
+    padding: 0.5rem 1rem; }
+  .work .technology__name {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem; }
+  .work .technology__descr {
+    color: #999; }
+
+.work .technology:nth-child(-n+3) {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4); }
+
 @media (max-width: 425px) {
   html {
     font-size: 12px; }
@@ -684,3 +724,45 @@ html {
     line-height: 6rem; }
   .counter__title {
     font-size: 1rem; } }
+
+@media (max-width: 767px) {
+  .work__technologies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .work__technology {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 1;
+            flex: 0 0 1; }
+  .work .technology {
+    width: 100%;
+    padding: 0 1rem; }
+    .work .technology__icon {
+      font-size: 5rem; }
+    .work .technology__descr-wrapper {
+      padding: 1rem 2rem; }
+    .work .technology__name {
+      font-size: 2rem;
+      padding-bottom: 1rem; }
+    .work .technology__descr {
+      font-size: 2rem; }
+  .work .technology:nth-child(-n+5) {
+    border-bottom: 1px solid rgba(153, 153, 153, 0.4); } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .work__technology {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .work .technology__icon {
+    font-size: 2.5rem; }
+  .work .technology__descr-wrapper {
+    padding: 1rem 2rem; }
+  .work .technology__name {
+    font-size: 1rem;
+    padding-bottom: 1rem; }
+  .work .technology__descr {
+    font-size: 1rem; }
+  .work .technology:nth-child(-n+4) {
+    border-bottom: 1px solid rgba(153, 153, 153, 0.4); } }

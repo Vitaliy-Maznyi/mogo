@@ -1,0 +1,35 @@
+.work {
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+  &__technology {
+    flex: 0 0 33%;
+    display: flex;
+  }
+  .technology {
+    width: 200px;
+    margin-bottom: 1rem;
+    &__icon {
+      color: $color-green-riptide;
+      flex: 0 0 15%;
+      font-size: 1.5rem;
+    }
+    &__descr-wrapper {
+      flex: 0 0 85%;
+      padding: 0.5rem 1rem;
+    }
+    &__name {
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+    }
+    &__descr {
+      color: $color-grey;
+    }
+  }
+  .technology:nth-child(-n+3) {
+    border-bottom: 1px solid transparentize($color-grey, 0.6);
+  }
+}
