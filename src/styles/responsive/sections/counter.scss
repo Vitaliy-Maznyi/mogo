@@ -1,0 +1,24 @@
+@media (max-width: $min-desktop-width - 1) {
+  .counter {
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      display: flex;
+      flex: 0 0 1;
+      border-bottom: 1px solid $color-white;
+      border-right: 0;
+    }
+    &__item:first-child {
+      border-top: 1px solid $color-white;
+      border-left: 0;
+    }
+    &__number {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+    &__title {
+      font-size: 1rem;
+    }
+  }
+}
