@@ -12,3 +12,7 @@ $(".js-header-slider").slick({
   zIndex: 0,
   draggable: false
 });
+
+$('.js-toggle-menu').on('click', () => {
+  $('.header__nav-container').toggleClass('header__nav-container--opened')
+})

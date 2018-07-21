@@ -1,1 +1,1 @@
-@import 'header-slider.js'
+@import 'header.js'

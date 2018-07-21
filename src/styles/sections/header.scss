@@ -1,5 +1,10 @@
 .header {
-  &__slider{
+  &__container {
+    position: relative;
+    height: 100vh;
+    color: $color-white;
+  }
+  &__slider {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -8,7 +13,7 @@
     object-fit: cover;
     z-index: -1;
 
-    &:after{
+    &:after {
       display: block;
       content: "";
       position: absolute;
@@ -25,6 +30,107 @@
       height: 100vh;
       object-fit: cover;
       user-select: none;
+    }
+  }
+  &__content {
+    position: relative;
+    top: 30px;
+  }
+  &__nav-container {
+    display: flex;
+    transition: 0.3s;
+  }
+  &__logo {
+    font: 1rem $font-montserrat;
+    font-weight: bold;
+    cursor: default;
+  }
+  &__nav-button {
+    display: none;
+  }
+  &__nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+  .nav{
+    &__item {
+      font: 0.6rem $font-montserrat;
+      text-transform: uppercase;
+      margin-left: 50px;
+      position: relative;
+
+      &:hover{
+        color: $color-yellow-vis;
+
+        &:after{
+          transform: scaleX(1);
+        }
+      }
+
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        transform: scaleX(0);
+        background-color: $color-yellow-vis;
+        right: 0;
+        bottom: -10px;
+        transition: 0.3s transform;
+        transform-origin: center;
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(50%, 25%);
+    top: 50%;
+    right: 50%;
+    &--secondary {
+      font: 3rem $font-cursive;
+    }
+    &--primary {
+      font: 5.5rem bold $font-montserrat;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 4.7rem;
+      margin-top: 1rem;
+      margin-bottom: 10rem;
+
+      &:after{
+        position: absolute;
+        display: block;
+        height: 0.2rem;
+        width: 4rem;
+        background-color: #fff;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+      }
+    }
+  }
+  &__button{
+    text-transform: uppercase;
+    border: 0.2rem solid $color-white;
+    height: 3rem;
+    padding: 0 3rem;
+    color: $color-white;
+    background-color: transparent;
+    transition: 0.3s;
+
+    &:hover{
+      color: $color-yellow-vis;
+      background-color: $color-white
     }
   }
 }

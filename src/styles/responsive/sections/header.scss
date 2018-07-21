@@ -1,0 +1,57 @@
+@media (max-width: ($min-tablet-width - 1)) {
+  .header {
+    &__content {
+      top: 0;
+    }
+    &__nav-container {
+      position: absolute;
+      height: 50px;
+      width: 100%;
+      z-index: 999;
+      .nav {
+        display: none;
+      }
+      &--opened {
+        height: 100vh;
+        .nav {
+          display: flex;
+        }
+      }
+    }
+    &__logo {
+      display: block;
+      margin: 10px;
+      position: absolute;
+      font-size: 20px;
+    }
+    &__nav-button {
+      display: block;
+      margin: 10px;
+      position: absolute;
+      right: 0;
+      font-size: 20px;
+    }
+    .nav{
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      background-color: transparentize($color-black, 0.1);
+      text-align: center;
+      padding-top: 100px;
+      &__item {
+        width: 100%;
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+    &__text {
+      &--secondary {
+        font: 2rem $font-cursive;
+      }
+      &--primary {
+        font: 4.5rem bold $font-montserrat;
+      }
+    }
+  }
+}
