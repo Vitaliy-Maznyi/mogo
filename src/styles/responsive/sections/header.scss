@@ -1,3 +1,13 @@
+@media (min-width: $min-tablet-width) and (max-width: $min-desktop-width) {
+  .header {
+    .nav{
+      &__item {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 @media (max-width: ($min-tablet-width - 1)) {
   .header {
     &__content {
@@ -52,6 +62,30 @@
       &--primary {
         font: 4.5rem bold $font-montserrat;
       }
+    }
+  }
+}
+
+@media (min-width: $min-desktop-width) {
+  .header {
+    &__text {
+      &--secondary {
+        font: 1.5rem $font-cursive;
+      }
+      &--primary {
+        font: 2.5rem bold $font-montserrat;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+      }
+    }
+    &__button{
+      height: 1.5rem;
+      padding: 0 1.5rem;
+      font-size: 0.5rem;
+      border: 0.1rem solid $color-white;
     }
   }
 }

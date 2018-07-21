@@ -2,10 +2,13 @@
 @import '_reset';
 
 @import 'layout';
+@import 'shared';
 
 // sections
 @import 'sections/header';
+@import 'sections/about_us';
 
 // responsive
 @import 'responsive/layout';
 @import 'responsive/sections/header';
+@import 'responsive/sections/about_us';

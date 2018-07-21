@@ -1,0 +1,40 @@
+.image {
+  background-color: $color-green-riptide;
+  &:hover {
+    & .image--moveable {
+      transform: translate(-10px,-10px);
+      transition: 0.5s ease-out;
+    }
+  }
+
+  &--moveable img {
+    width: 100%;
+    height: 100%;
+  }
+
+  & .gradient-content {
+    color: white;
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 0deg, transparentize($color-yellow-vis, 0.1) 0%, transparentize($color-light-coral, 0.1) 100%);
+
+    &__title {
+      margin-top: 5px;
+      font-family: $font-montserrat;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  & .image--moveable:hover .gradient-content, .image__container:hover .gradient-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

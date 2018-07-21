@@ -1,0 +1,13 @@
+@media (max-width: $min-desktop-width - 1) {
+  .about {
+    &__images {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    .image__container {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
