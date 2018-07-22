@@ -1,0 +1,15 @@
+@media (max-width: $min-desktop-width - 1) {
+  .devices {
+    &__image {
+      &--tablet {
+        width: 50%;
+      }
+      &--phone {
+        transform-origin: 50% 100% 0;
+        transform: scale(0.3);
+        bottom: -40px;
+        left: 30%;
+      }
+    }
+  }
+}

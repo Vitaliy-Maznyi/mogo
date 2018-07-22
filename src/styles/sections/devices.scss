@@ -1,0 +1,21 @@
+.devices {
+  background: url('/images/backgrounds/devices_bg.png') no-repeat center;
+  background-size: cover;
+  .section {
+    padding: 0 2rem !important;
+  }
+  &__images {
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    margin-top: 45px;
+  }
+
+  &__image {
+    &--phone {
+      position: absolute;
+      bottom: -100px;
+      left: 60%;
+    }
+  }
+}

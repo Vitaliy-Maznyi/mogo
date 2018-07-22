@@ -572,6 +572,21 @@ html {
 .work .technology:nth-child(-n+3) {
   border-bottom: 1px solid rgba(153, 153, 153, 0.4); }
 
+.devices {
+  background: url("/images/backgrounds/devices_bg.png") no-repeat center;
+  background-size: cover; }
+  .devices .section {
+    padding: 0 2rem !important; }
+  .devices__images {
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    margin-top: 45px; }
+  .devices__image--phone {
+    position: absolute;
+    bottom: -100px;
+    left: 60%; }
+
 @media (max-width: 425px) {
   html {
     font-size: 12px; }
@@ -766,3 +781,14 @@ html {
     font-size: 1rem; }
   .work .technology:nth-child(-n+4) {
     border-bottom: 1px solid rgba(153, 153, 153, 0.4); } }
+
+@media (max-width: 991px) {
+  .devices__image--tablet {
+    width: 50%; }
+  .devices__image--phone {
+    -webkit-transform-origin: 50% 100% 0;
+            transform-origin: 50% 100% 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    bottom: -40px;
+    left: 30%; } }
