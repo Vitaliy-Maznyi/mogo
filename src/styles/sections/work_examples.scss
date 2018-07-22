@@ -1,0 +1,27 @@
+.work-examples {
+  &__container {
+    display: flex;
+    margin-top: 2rem;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+  }
+  &__row {
+    display: flex;
+  }
+  &__image {
+    width: 100%;
+  }
+  .gradient-content {
+    &__title {
+      font-size: 0.5rem;
+      margin: 0.3rem 0;
+    }
+
+    &__subtitle {
+      font-size: 0.4rem;
+    }
+  }
+}

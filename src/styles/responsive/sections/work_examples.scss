@@ -1,0 +1,17 @@
+@media (max-width: $min-desktop-width - 1) {
+  .work-examples {
+    &__container {
+      flex-direction: column;
+    }
+    .gradient-content {
+      &__title {
+        font-size: 1rem;
+        margin: 0.6rem 0;
+      }
+
+      &__subtitle {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

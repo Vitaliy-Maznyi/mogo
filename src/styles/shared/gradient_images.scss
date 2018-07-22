@@ -1,5 +1,6 @@
 .image {
   background-color: $color-green-riptide;
+  position: relative;
   &:hover {
     & .image--moveable {
       transform: translate(-10px,-10px);
@@ -29,6 +30,11 @@
       margin-bottom: 0;
       text-transform: uppercase;
     }
+    &__subtitle {
+      font-family: $font-montserrat;
+      font-style: italic;
+      margin-bottom: 0;
+    }
     &__icons {
       a {
         color: $color-light-coral;
@@ -48,7 +54,7 @@
     }
   }
 
-  & .image--moveable:hover .gradient-content, .image__container:hover .gradient-content{
+  & .image--moveable:hover .gradient-content, &.image__container:hover .gradient-content {
     display: flex;
     justify-content: center;
     align-items: center;
