@@ -1,0 +1,22 @@
+.brands {
+  background-color: transparentize($color-grey, 0.9);
+  padding: 2rem;
+  .section {
+    padding: 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 4rem;
+      height: 4rem;
+      margin: 1rem 0;
+      opacity: 1;
+      transition: 0.2s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
