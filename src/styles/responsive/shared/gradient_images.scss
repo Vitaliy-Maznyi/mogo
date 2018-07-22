@@ -1,0 +1,14 @@
+@media (max-width: $min-desktop-width - 1) {
+  .image {
+    & .gradient-content {
+      &__icons {
+        a {
+          height: 4rem;
+          width: 4rem;
+          line-height: 4rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

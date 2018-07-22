@@ -1,0 +1,21 @@
+@media (max-width: $min-desktop-width - 1) {
+  .team {
+    &__images {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    &__block {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .image {
+      &__title {
+        font-size: 1.5rem;
+      }
+      &__subtitle {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
