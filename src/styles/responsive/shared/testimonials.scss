@@ -1,0 +1,12 @@
+.testimonials {
+  .testimonial {
+    &__icon {
+      display: none;
+    }
+    blockquote {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+  }
+}

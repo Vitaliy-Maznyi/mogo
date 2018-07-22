@@ -1,0 +1,48 @@
+.testimonials {
+  background-color: transparentize($color-grey, 0.95);
+  .section {
+    padding: 0 2rem;
+  }
+  .testimonial {
+    display: flex;
+    padding: 2rem;
+    &__icon {
+      display: flex;
+      flex: 0 0 20%;
+      font-size: 4rem;
+      height: 7rem;
+      color: $color-green-riptide;
+      border: 2px solid $color-green-riptide;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+    }
+    blockquote {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 80%;
+      margin: 0;
+      p {
+        margin: 0;
+        color: $color-grey;
+        font-style: italic;
+        text-align: justify;
+        line-height: 1rem;
+      }
+      cite {
+        font: 1rem $font-cursive;
+        margin-top: 1rem;
+
+        &:before{
+          content: "";
+          display: inline-block;
+          height: 3px;
+          width: 3rem;
+          background-color: #f38181;
+          margin-bottom: 0.4rem;
+          margin-right: 0.8px;
+        }
+      }
+    }
+  }
+}

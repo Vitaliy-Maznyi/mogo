@@ -15,4 +15,5 @@ $(".js-header-slider").slick({
 
 $('.js-toggle-menu').on('click', () => {
   $('.header__nav-container').toggleClass('header__nav-container--opened')
-})
+});
+
