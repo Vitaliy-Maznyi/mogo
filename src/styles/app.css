@@ -358,6 +358,80 @@ html {
         -ms-flex-direction: column;
             flex-direction: column; }
 
+.testimonials {
+  background-color: rgba(153, 153, 153, 0.05); }
+  .testimonials .section {
+    padding: 0 2rem; }
+  .testimonials .testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem; }
+    .testimonials .testimonial__icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 20%;
+              flex: 0 0 20%;
+      font-size: 4rem;
+      height: 7rem;
+      color: #95e1d3;
+      border: 2px solid #95e1d3;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: 1rem; }
+    .testimonials .testimonial__avatar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 20%;
+              flex: 0 0 20%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: 1rem; }
+      .testimonials .testimonial__avatar img {
+        width: 7rem; }
+    .testimonials .testimonial blockquote {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 80%;
+              flex: 0 0 80%;
+      margin: 0;
+      padding: 1rem; }
+      .testimonials .testimonial blockquote p {
+        margin: 0;
+        color: #999;
+        font-size: 0.8rem;
+        font-style: italic;
+        font-weight: 200;
+        text-align: justify;
+        line-height: 1rem; }
+      .testimonials .testimonial blockquote cite {
+        font: 0.7rem Kaushan Script, cursive;
+        margin-top: 1rem; }
+        .testimonials .testimonial blockquote cite:before {
+          content: "";
+          display: inline-block;
+          height: 0.15rem;
+          width: 3rem;
+          background-color: #f38181;
+          margin-bottom: 0.2rem;
+          margin-right: 0.8px; }
+
 .header__container {
   position: relative;
   height: 100vh;
@@ -704,60 +778,8 @@ html {
 .work-examples .gradient-content__subtitle {
   font-size: 0.4rem; }
 
-.testimonials {
-  background-color: rgba(153, 153, 153, 0.05); }
-  .testimonials .section {
-    padding: 0 2rem; }
-  .testimonials .testimonial {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 2rem; }
-    .testimonials .testimonial__icon {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 20%;
-              flex: 0 0 20%;
-      font-size: 4rem;
-      height: 7rem;
-      color: #95e1d3;
-      border: 2px solid #95e1d3;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 1rem; }
-    .testimonials .testimonial blockquote {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 80%;
-              flex: 0 0 80%;
-      margin: 0; }
-      .testimonials .testimonial blockquote p {
-        margin: 0;
-        color: #999;
-        font-style: italic;
-        text-align: justify;
-        line-height: 1rem; }
-      .testimonials .testimonial blockquote cite {
-        font: 1rem Kaushan Script, cursive;
-        margin-top: 1rem; }
-        .testimonials .testimonial blockquote cite:before {
-          content: "";
-          display: inline-block;
-          height: 3px;
-          width: 3rem;
-          background-color: #f38181;
-          margin-bottom: 0.4rem;
-          margin-right: 0.8px; }
+.quotes {
+  background-color: transparent; }
 
 @media (max-width: 425px) {
   html {
