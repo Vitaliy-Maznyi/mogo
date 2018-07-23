@@ -1,0 +1,159 @@
+.footer {
+  padding-bottom: 0 !important;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+  &__subscription {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+  }
+  .subscription {
+    h1 {
+      color: transparentize($color-grey, 0.5);
+    }
+    &__descr {
+      color: $color-grey;
+      font-size: 0.6rem;
+    }
+    &__followers {
+      margin-top: 1rem;
+    }
+    &__form {
+      margin: 1rem 0;
+      padding-right: 2rem;
+      form {
+        display: flex;
+      }
+      input {
+        flex: 1 0 auto;
+        padding: 0 0.4rem;
+        border: 1px solid transparentize($color-grey, 0.7);
+        font-style: italic;
+        font-weight: 300;
+        &::placeholder {
+          color: transparentize($color-grey, 0.7);
+          font-size: 0.8rem;
+          line-height: 0.8rem;
+        }
+      }
+      button {
+        padding: 0.5rem 0.6rem;
+        border: none;
+        background-color: $color-green-riptide;
+        font-family: $font-montserrat;
+        font-weight: bold;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        color: $color-white;
+        opacity: 0.7;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+  .followers {
+    &__count {
+      font-size: 0.6rem;
+      font-weight: 300;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid transparentize($color-grey, 0.5);
+      span {
+        font-weight: bold;
+      }
+    }
+    &__social {
+      display: flex;
+      font-size: 0.6rem;
+      color: $color-green-riptide;
+      margin-top: 0.5rem;
+      span {
+        font-style: italic;
+        font-weight: 200;
+        margin-right: 1rem;
+      }
+      a {
+        color: $color-green-riptide;
+        margin: 0 0.2rem;
+        opacity: 0.7;
+        transition-duration: 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__block-title {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 1rem 0;
+  }
+  &__block-content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__blogs {
+    flex: 0 0 30%;
+  }
+  .blog {
+    display: flex;
+    margin-bottom: 1rem;
+    &__image {
+      flex: 0 0 30%;
+      align-items: center;
+      display: flex;
+    }
+    &__descr {
+      flex: 0 0 70%;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+    &__title {
+      font-size: 0.4rem;
+      text-transform: uppercase;
+      font-weight: 200;
+    }
+    &__date {
+      font-size: 0.3rem;
+      padding: 0.1rem;
+      color: $color-grey;
+    }
+  }
+
+  &__instagram {
+    flex: 0 0 30%;
+  }
+  .instagram {
+    &__photos {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 30%;
+        margin: 1px;
+      }
+    }
+    &__link a {
+      text-decoration: none;
+      font-size: 0.5rem;
+      color: $color-grey;
+      font-style: italic;
+    }
+  }
+  &__copyright {
+    border-top: 1px solid transparentize($color-grey, 0.7);
+    color: $color-grey;
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 0.7rem 0;
+  }
+}
