@@ -1,13 +1,23 @@
 @media (max-width: $min-desktop-width - 1) {
   .testimonials {
     .testimonial {
-      &__icon {
+      &__icon, &__avatar {
         display: none;
       }
       blockquote {
         display: flex;
         flex-wrap: wrap;
         flex: 1;
+        p {
+          font-size: 2rem;
+          line-height: 2.2rem;
+        }
+        cite {
+          font-size: 1.8rem;
+          &:before {
+            margin-bottom: 0.5rem;
+          }
+        }
       }
     }
   }

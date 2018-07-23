@@ -283,7 +283,7 @@ html {
   .section__subtitle {
     font: 1.3rem Montserrat, sans-serif;
     font-weight: bold;
-    margin: 0.7rem 0 1.5rem 0;
+    margin: 0 0 2rem 0;
     text-transform: uppercase;
     text-align: center; }
   .section__line {
@@ -538,8 +538,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translate(50%, 25%);
-          transform: translate(50%, 25%);
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   top: 50%;
   right: 50%; }
   .header__text--secondary {
@@ -798,7 +798,7 @@ html {
       height: 0.4rem; }
     .section__description {
       font-size: 1.5rem;
-      line-height: 1.5rem;
+      line-height: 1.7rem;
       padding: 0 1rem; } }
 
 @media (min-width: 768px) {
@@ -1040,7 +1040,7 @@ html {
     font-size: 0.8rem; } }
 
 @media (max-width: 991px) {
-  .testimonials .testimonial__icon {
+  .testimonials .testimonial__icon, .testimonials .testimonial__avatar {
     display: none; }
   .testimonials .testimonial blockquote {
     display: -webkit-box;
@@ -1050,4 +1050,11 @@ html {
         flex-wrap: wrap;
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1; } }
+            flex: 1; }
+    .testimonials .testimonial blockquote p {
+      font-size: 2rem;
+      line-height: 2.2rem; }
+    .testimonials .testimonial blockquote cite {
+      font-size: 1.8rem; }
+      .testimonials .testimonial blockquote cite:before {
+        margin-bottom: 0.5rem; } }
