@@ -6,41 +6,41 @@ let gulp            = require('gulp'),
     jsImport          = require('gulp-js-import')
 
 gulp.task('importJs', function() {
-  return gulp.src('src/scripts/app.js')
+  return gulp.src('docs/scripts/app.js')
       .pipe(jsImport({hideConsole: true}))
-      .pipe(gulp.dest('src'))
+      .pipe(gulp.dest('docs'))
       .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('scss', () => {
-  return gulp.src('src/styles/app.scss')
+  return gulp.src('docs/styles/app.scss')
       .pipe(scss().on( 'error', (error) =>
           {console.log( error );} )
       )
       .pipe(autoprefixer(['last 2 versions', '> 1%', 'ie 8', 'ie 7'], {cascade:true}))
-      .pipe(gulp.dest('src/styles'))
+      .pipe(gulp.dest('docs/styles'))
       .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('nunjucks', () => {
-  return gulp.src('src/templates/index.html')
+  return gulp.src('docs/templates/index.html')
       .pipe(nunjucks.compile())
-      .pipe(gulp.dest('src'))
+      .pipe(gulp.dest('docs'))
       .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('browser-sync', () => {
   browserSync({
     server: {
-      baseDir: 'src'
+      baseDir: 'docs'
     },
     notify: false
   });
 });
 
 gulp.task('default', ['browser-sync', 'nunjucks', 'scss', 'importJs'], () => {
-  gulp.watch('src/styles/**/*.scss', ['scss']);
-  gulp.watch('src/scripts/**/*.js', ['importJs']);
-  gulp.watch('src/templates/**/*.html', ['nunjucks', browserSync.reload]);
-  gulp.watch('src/styles/**/*.css', browserSync.reload);
+  gulp.watch('docs/styles/**/*.scss', ['scss']);
+  gulp.watch('docs/scripts/**/*.js', ['importJs']);
+  gulp.watch('docs/templates/**/*.html', ['nunjucks', browserSync.reload]);
+  gulp.watch('docs/styles/**/*.css', browserSync.reload);
 });
