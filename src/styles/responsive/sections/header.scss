@@ -18,6 +18,9 @@
       height: 50px;
       width: 100%;
       z-index: 999;
+      &.section {
+        padding-top: 0;
+      }
       .nav {
         display: none;
       }

@@ -467,16 +467,14 @@ html {
         -ms-user-select: none;
             user-select: none; }
 
-.header__content {
-  position: relative;
-  top: 30px; }
-
 .header__nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  .header__nav-container.section {
+    padding-top: 30px; }
 
 .header__logo {
   font: 1rem Montserrat, sans-serif;
@@ -538,10 +536,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 50%;
-  right: 50%; }
+  left: 50%; }
   .header__text--secondary {
     font: 3rem Kaushan Script, cursive; }
   .header__text--primary {
@@ -927,6 +925,8 @@ html {
     height: 50px;
     width: 100%;
     z-index: 999; }
+    .header__nav-container.section {
+      padding-top: 0; }
     .header__nav-container .nav {
       display: none; }
     .header__nav-container--opened {
