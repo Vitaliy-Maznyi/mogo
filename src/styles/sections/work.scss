@@ -19,14 +19,16 @@
     }
     &__descr-wrapper {
       flex: 0 0 85%;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 1rem 1rem;
     }
     &__name {
       text-transform: uppercase;
+      font-size: 0.8rem;
       padding-bottom: 0.5rem;
     }
     &__descr {
       color: $color-grey;
+      font-size: 0.6rem;
     }
   }
   .technology:nth-child(-n+3) {

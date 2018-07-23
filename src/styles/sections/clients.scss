@@ -1,0 +1,52 @@
+.clients {
+  background: url('/images/backgrounds/clients_bg.png') no-repeat center;
+  background-size: cover;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+
+  &__item {
+    flex: 0 0 50%;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+}
+
+.client {
+  &__avatar {
+    color: $color-green-riptide;
+    flex: 0 0 20%;
+    font-size: 1.5rem;
+  }
+  &__descr-wrapper {
+    flex: 0 0 80%;
+    padding: 0.5rem 1rem 1rem;
+  }
+  &__name {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 0.8rem;
+  }
+  &__position {
+    color: $color-grey;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 200;
+    padding: 0.5rem 0;
+  }
+  &__line {
+    background-color: $color-light-coral;
+    width: 4rem;
+    height: 0.15rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  &__quote {
+    color: $color-grey;
+    font-size: 0.6rem;
+  }
+}

@@ -16,10 +16,13 @@
 @import 'sections/brands';
 @import 'sections/work_examples';
 @import 'sections/quotes';
+@import 'sections/clients';
 
 // responsive
 @import 'responsive/layout';
 @import 'responsive/shared/gradient_images';
+@import 'responsive/shared/testimonials';
+
 @import 'responsive/sections/header';
 @import 'responsive/sections/about_us';
 @import 'responsive/sections/counter';
@@ -28,4 +31,4 @@
 @import 'responsive/sections/team';
 @import 'responsive/sections/brands';
 @import 'responsive/sections/work_examples';
-@import 'responsive/shared/testimonials';
+@import 'responsive/sections/clients';

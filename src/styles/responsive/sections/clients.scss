@@ -1,0 +1,42 @@
+@media (max-width: $min-desktop-width - 1) {
+  .clients {
+    &__container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    &__item {
+      flex: 1;
+    }
+  }
+
+  .client {
+    flex-direction: column;
+    align-items: center;
+    &__avatar {
+      flex: 1;
+      font-size: 1.5rem;
+    }
+    &__descr-wrapper {
+      flex: 1;
+      margin-top: 1rem;
+    }
+    &__name {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    &__position {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    &__line {
+      width: 6rem;
+      height: 0.2rem;
+      margin: 0 auto 1rem;
+    }
+    &__quote {
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+    }
+  }
+}
