@@ -1285,9 +1285,8 @@ html {
         -ms-flex-direction: column;
             flex-direction: column; }
   .work__technology {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 1;
-            flex: 0 0 1; }
+    display: block;
+    text-align: center; }
   .work .technology {
     width: 100%;
     padding: 0 1rem; }

@@ -4,7 +4,8 @@
       flex-direction: column;
     }
     &__technology {
-      flex: 0 0 1;
+      display: block;
+      text-align: center;
     }
     .technology {
       width: 100%;
